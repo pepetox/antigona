@@ -1,0 +1,5 @@
+%h1 ¿Quienes somos?
+%p
+  = getTexto("quienes_somos")
+%p
+  = link_to t('.new', :default => t("helpers.links.new")), new_integrante_path, :class => 'btn btn-primary'

@@ -1,0 +1,72 @@
+%header
+  %section.cuerpo
+    %h1 Panel de control
+    %article
+      %h2 Bienvenido al panel de control
+      %p Desde aquí podrá editar el contenido de la web, pulse en los distintos aparatados para desplegarlos y ver las opciones
+    %article
+      .seccion
+        %h3
+          %a Integrantes de la organización
+        .listado
+          %ul
+            - @integrantes.each do |integrante|
+              .bloque
+                %li
+                  %a= integrante.name
+                .contenido
+                  = integrante.description.html_safe
+                  %p= button_to 'Editar', edit_integrante_path(integrante), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo Jugador', new_integrante_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Publicaciones:
+        .listado
+          %ul
+            - @publicaciones.each do |publicacion|
+              .bloque
+                %li
+                  %a= publicacion.name
+                .contenido
+                  = publicacion.description.html_safe
+                  %p= button_to 'Editar', edit_publicacion_path(publicacion), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nueva publicación', new_publicacion_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Fotos del carrusel:
+        .listado
+          %ul
+            - @fotos.each do |foto|
+              .bloque
+                %li
+                  %a= foto.name
+                .contenido
+                  = foto.img_link
+                  %p= button_to 'Editar', edit_foto_path(foto), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nueva foto', new_foto_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Post del blog:
+        .listado
+          %ul
+            - @posts.each do |post|
+              .bloque
+                %li
+                  %a= post.title
+                .contenido
+                  = post.description.html_safe
+                  %p= button_to 'Editar', edit_post_path(post), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo post', new_post_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Textos de la web:
+        .listado
+          %ul
+            - @textos.each do |texto|
+              .bloque
+                %li
+                  %a= texto.name
+                .contenido
+                  = texto.content
+
+

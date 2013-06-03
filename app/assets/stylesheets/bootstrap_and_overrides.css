@@ -1,0 +1,62 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+  boyd, p, a, h1, h2, ul, li {
+    font-family: 'Smythe', cursive !important;
+  }
+  #principal{
+    width: 60%;
+    margin: auto auto;
+  }
+  .contenido {
+    display: none;
+  }
+  .listado{
+    display: none;
+  }
+  .barra {
+    padding: 2% 0;
+  }
+  .bloque_dir{
+    border: 3px solid #ccc;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: .5%;
+    vertical-align: center;
+  }
+  .bloque_dir_prin{
+    border: 6px solid #ccc;
+    width: 91%;
+    text-align: center;
+    margin: 0 auto;
+
+
+  }
+  .img-rounded{
+
+    opacity: .9;
+  }
+  .img-rounded:hover {
+    -webkit-transform: rotate(150);
+    -moz-transform: rotate(150);
+    -o-transform: rotate(150);
+    transform: rotate(150);
+    opacity: 1;
+    -webkit-box-shadow: 4px 4px 5px #282b1f;
+    -moz-box-shadow: 4px 4px 5px #282b1f;
+    box-shadow: 4px 4px 5px #282b1f;
+    }
+  #diapos{
+    height: 30%;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .row-fluid [class*="span"]:first-child {
+      margin-left: -21px;
+  }

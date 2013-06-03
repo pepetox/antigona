@@ -1,0 +1,17 @@
+.well.sidebar-nav
+  %ul.nav.nav-list
+    %li.nav-header Barra de navegación
+    %li.dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        Publicaciones
+        %b.caret
+      %ul.dropdown-menu
+        - @publicaciones.each do |publicacion|
+          %li= link_to publicacion.name, publicacion
+    %li.dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        Integrantes
+        %b.caret
+      %ul.dropdown-menu
+        - @integrantes.each do |integrante|
+          %li= link_to integrante.name, integrante
