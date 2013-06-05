@@ -1,0 +1,19 @@
+%h1 Publicaciones
+%p
+  = getTexto("publicaciones")
+%table.table.table-striped
+  %thead
+    %tr
+      %th Hasta el momento hemos publicado
+  %tbody
+  - @publicacions.each do |pub|
+    %tr
+      %td= image_tag pub.img_link
+      %td= link_to pub.name, publicacion_path(pub)
+      %td= pub.description
+      %td= button_to "Ver Documento", pub.doc_link
+
+
+%p
+  = link_to t('.new', :default => t("helpers.links.new")), new_publicacion_path, :class => 'btn btn-primary'
+
