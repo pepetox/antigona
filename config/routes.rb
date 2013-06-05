@@ -5,6 +5,7 @@ Antigona::Application.routes.draw do
   resources :posts
   resources :fotos
   resources :integrantes
+  resources :textos
 
   get "main/inicio"
   get "main/experiencias"
@@ -12,6 +13,7 @@ Antigona::Application.routes.draw do
   match "/admin" => "main#panel_control"
   get "main/panel_control"
   get "main/contacto"
+
 
 
   # The priority is based upon order of creation:

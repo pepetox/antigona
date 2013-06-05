@@ -49,10 +49,10 @@ Principales áreas de trabajo: investigación participativa; planificación de p
 Texto.create(name: "publicaciones", content: "Nuestra asociación ha publicado hasta la fecha unos cuantos articulos que seguro que serán de su interes");
 
 Foto.create(name: "uno", img_link: "http://farm9.staticflickr.com/8439/8005634375_16e616b682_z.jpg");
-Foto.create(name: "uno", img_link: "http://farm9.staticflickr.com/8122/8692774842_4c04cf8247_z.jpg");
-Foto.create(name: "uno", img_link: "http://farm9.staticflickr.com/8439/8005634375_16e616b683_z.jpg");
+Foto.create(name: "dos", img_link: "http://farm9.staticflickr.com/8122/8692774842_4c04cf8247_z.jpg");
+Foto.create(name: "tres", img_link: "http://farm9.staticflickr.com/8439/8005634375_16e616b683_z.jpg");
 
 
 
-Post.create(title: "post de testing", description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
+Post.create(title: "post de testing",img_link: "http://farm9.staticflickr.com/8526/8633233655_29b47934ca_z.jpg" description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
 

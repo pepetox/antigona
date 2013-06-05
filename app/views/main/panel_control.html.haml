@@ -14,11 +14,12 @@
             - @integrantes.each do |integrante|
               .bloque
                 %li
-                  %a= integrante.name
+                  %a
+                    %strong=integrante.name
                 .contenido
-                  = integrante.description.html_safe
+                  %p= integrante.description.html_safe
                   %p= button_to 'Editar', edit_integrante_path(integrante), method: "get", class: "btn btn-primary"
-          %p= button_to 'Nuevo Jugador', new_integrante_path(), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo integrante', new_integrante_path(), method: "get", class: "btn btn-primary"
       .seccion
         %h3
           %a Publicaciones:
@@ -27,9 +28,10 @@
             - @publicaciones.each do |publicacion|
               .bloque
                 %li
-                  %a= publicacion.name
+                  %a
+                    %strong= publicacion.name
                 .contenido
-                  = publicacion.description.html_safe
+                  %p= publicacion.description.html_safe
                   %p= button_to 'Editar', edit_publicacion_path(publicacion), method: "get", class: "btn btn-primary"
           %p= button_to 'Nueva publicación', new_publicacion_path(), method: "get", class: "btn btn-primary"
       .seccion
@@ -40,9 +42,14 @@
             - @fotos.each do |foto|
               .bloque
                 %li
-                  %a= foto.name
+                  %a
+                    %strong= foto.name
                 .contenido
-                  = foto.img_link
+                  %p= foto.img_link
+                  %p
+                    -unless foto.img_link == ""
+                      = image_tag foto.img_link, :size => "200x200", class: "img-rounded"
+
                   %p= button_to 'Editar', edit_foto_path(foto), method: "get", class: "btn btn-primary"
           %p= button_to 'Nueva foto', new_foto_path(), method: "get", class: "btn btn-primary"
       .seccion
@@ -53,9 +60,13 @@
             - @posts.each do |post|
               .bloque
                 %li
-                  %a= post.title
+                  %a
+                    %strong= post.title
                 .contenido
-                  = post.description.html_safe
+                  %p
+                    -unless post.img_link == ""
+                      = image_tag post.img_link, :size => "200x200", class: "img-rounded"
+                  %p= post.description.html_safe
                   %p= button_to 'Editar', edit_post_path(post), method: "get", class: "btn btn-primary"
           %p= button_to 'Nuevo post', new_post_path(), method: "get", class: "btn btn-primary"
       .seccion
@@ -66,8 +77,10 @@
             - @textos.each do |texto|
               .bloque
                 %li
-                  %a= texto.name
-                .contenido
-                  = texto.content
+                  %a
+                    %strong= texto.name
+
+                  %p= texto.content
+                  %p= button_to 'Editar', edit_texto_path(texto), method: "get", class: "btn btn-primary"
 
 

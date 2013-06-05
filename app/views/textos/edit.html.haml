@@ -1,0 +1,19 @@
+%h1 Editar texto
+= form_for @texto do |f|
+  - if @texto.errors.any?
+    %h2 Errores:
+    %ul
+      - @text.errors.full_messages.each do |message|
+        %li= message
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+    %br/
+    %br/
+    = f.label :content
+    %br/
+    = cktext_area :texto, :content, :ckeditor => {:uiColor => "#dddddd", :toolbar => "mini", :language => "es"}
+
+  %p
+    = f.submit "Actualizar Texto" , class: "btn btn-large btn-primary"

@@ -14,33 +14,33 @@ class TextosController < ApplicationController
   # GET /textos/1
   # GET /textos/1.json
   def show
-    @post = Texto.find(params[:id])
+    @texto = Texto.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @post }
+      format.json { render json: @texto }
     end
   end
 
 
   # GET /textos/1/edit
   def edit
-    @post = Texto.find(params[:id])
+    @texto = Texto.find(params[:id])
   end
 
 
   # PUT /textos/1
   # PUT /textos/1.json
   def update
-    @post = Texto.find(params[:id])
+    @texto = Texto.find(params[:id])
 
     respond_to do |format|
-      if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+      if @texto.update_attributes(params[:texto])
+        format.html { redirect_to @texto, notice: 'texto was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.json { render json: @texto.errors, status: :unprocessable_entity }
       end
     end
   end

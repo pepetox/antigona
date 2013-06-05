@@ -8,6 +8,10 @@
   boyd, p, a, h1, h2, ul, li {
     font-family: 'Smythe', cursive !important;
   }
+  strong {
+    font-size: 1.5em;
+
+  }
 
   .row-fluid [class*="span"]:first-child {
       margin-left: -21px;
@@ -15,6 +19,7 @@
 
   .contenido {
     display: none;
+    padding: 1%;
   }
   .listado{
     display: none;
@@ -27,14 +32,16 @@
     width: 30%;
     display: inline-block;
     text-align: center;
-    margin: .5%;
+    margin: 1% 0 0 2%;
     vertical-align: center;
+    padding-top: 4%;
   }
   .bloque_dir_prin{
     border: 6px solid #ccc;
-    width: 91%;
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: calc();
+    overflow: none;
 
 
   }
@@ -57,7 +64,7 @@
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      padding: 1%;
+      padding: 3% 1% 2% 5%;
 
   }
   #diapos{
