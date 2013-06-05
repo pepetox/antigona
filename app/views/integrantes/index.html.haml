@@ -1,19 +1,18 @@
-%h1 ¿Quíenes somos?
+%h1#titulo ¿Quíenes somos?
 %p
   = getTexto("quienes_somos")
-%table.table.table-striped
-  %thead
-    %tr
-      %th Nuestros integrantes son:
-  %tbody
-  - @integrantes.each do |int|
-    %tr
-      %td= image_tag int.img_link
-      %td= link_to int.name, integrante_path(int)
-      %td= int.description
-      %td= link_to "Curriculum vitae", int.cv_link
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Nuestros integrantes son:
+    %tbody
+    - @integrantes.each do |int|
+      %tr
+        %td= image_tag int.img_link
+        %td= link_to int.name, integrante_path(int)
+        %td= int.description
+        %td= link_to "Curriculum vitae", int.cv_link
 
 
-%p
-  = link_to t('.new', :default => t("helpers.links.new")), new_integrante_path, :class => 'btn btn-primary'
+
 

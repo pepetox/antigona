@@ -9,12 +9,16 @@
     <%= f.label :img_link, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :img_link, :class => 'text_field' %>
+      <% unless @post.img_link == "" %>
+           <%= image_tag @post.img_link, :size => "200x200", class: "img-rounded", id: "foto_derecha" %>
+      <% end %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :description, :class => 'control-label' %>
     <div class="controls">
-      <%= text_area :description, class: 'text_area' %>
+
+      <%= cktext_area :post, :description, :ckeditor => {:uiColor => "#dddddd", :toolbar => "mini"} %>
     </div>
   </div>
   <div class="control-group">

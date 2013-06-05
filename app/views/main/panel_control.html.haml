@@ -1,6 +1,7 @@
 %header
   %section.cuerpo
-    %h1 Panel de control
+    .hero-unit#titulo
+      %h1 Panel de control
     %article
       %h2 Bienvenido al panel de control
       %p Desde aquí podrá editar el contenido de la web, pulse en los distintos aparatados para desplegarlos y ver las opciones
@@ -8,7 +9,7 @@
       .seccion
         %h3
           %a Integrantes de la organización
-        .listado
+        .listado#apartado
           %ul
             - @integrantes.each do |integrante|
               .bloque
@@ -21,7 +22,7 @@
       .seccion
         %h3
           %a Publicaciones:
-        .listado
+        .listado#apartado
           %ul
             - @publicaciones.each do |publicacion|
               .bloque
@@ -34,7 +35,7 @@
       .seccion
         %h3
           %a Fotos del carrusel:
-        .listado
+        .listado#apartado
           %ul
             - @fotos.each do |foto|
               .bloque
@@ -47,7 +48,7 @@
       .seccion
         %h3
           %a Post del blog:
-        .listado
+        .listado#apartado
           %ul
             - @posts.each do |post|
               .bloque
@@ -60,7 +61,7 @@
       .seccion
         %h3
           %a Textos de la web:
-        .listado
+        .listado#apartado
           %ul
             - @textos.each do |texto|
               .bloque

@@ -8,10 +8,11 @@
   boyd, p, a, h1, h2, ul, li {
     font-family: 'Smythe', cursive !important;
   }
-  #principal{
-    width: 60%;
-    margin: auto auto;
+
+  .row-fluid [class*="span"]:first-child {
+      margin-left: -21px;
   }
+
   .contenido {
     display: none;
   }
@@ -51,12 +52,29 @@
     -moz-box-shadow: 4px 4px 5px #282b1f;
     box-shadow: 4px 4px 5px #282b1f;
     }
+  #apartado{
+      border: 1px solid #C3C3C3;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding: 1%;
+
+  }
   #diapos{
     height: 30%;
     width: auto;
     overflow: hidden;
   }
+  #principal{
+    width: 60%;
+    margin: auto auto;
+  }
 
-  .row-fluid [class*="span"]:first-child {
-      margin-left: -21px;
+  #foto_derecha{
+    float: right;
+
+  }
+  #titulo {
+    text-align: center;
+    padding: 3% 0 5% 0;
   }
