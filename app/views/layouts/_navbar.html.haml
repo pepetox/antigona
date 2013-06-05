@@ -15,3 +15,8 @@
       %ul.dropdown-menu
         - @integrantes.each do |integrante|
           %li= link_to integrante.name, integrante
+    %li
+      =link_to "Panel de control", admin_path
+    %li
+      - if user_signed_in?
+        = link_to "Desconectarse", destroy_user_session_path, :method => :delete

@@ -3,7 +3,7 @@ module MainHelper
     if Texto.find_by_name(clave)
       then Texto.find_by_name(clave).content
     else
-       "ERROR: no se ha encontrado el texto"
+       flash[:error] = "ERROR: no se ha encontrado el texto"
     end
 
   end
