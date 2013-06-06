@@ -9,12 +9,7 @@
     font-family: 'Smythe', cursive !important;
   }
   strong {
-    font-size: 1.5em;
-
-  }
-
-  .row-fluid [class*="span"]:first-child {
-      margin-left: -21px;
+    font-size: 1.2em;
   }
 
   .contenido {
@@ -59,6 +54,7 @@
     -moz-box-shadow: 4px 4px 5px #282b1f;
     box-shadow: 4px 4px 5px #282b1f;
     }
+
   #apartado{
       border: 1px solid #C3C3C3;
       -webkit-border-radius: 10px;
@@ -75,11 +71,19 @@
   #principal{
     width: 60%;
     margin: auto auto;
+    border: 1px solid #C3C3C3;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
 
   #foto_derecha{
     float: right;
-
+  }
+  #foto_portada{
+    margin: 1%;
+    display: inline-block;
+    width: 100%;
   }
   #titulo {
     text-align: center;

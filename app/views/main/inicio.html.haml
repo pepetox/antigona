@@ -3,24 +3,12 @@
     %h1 Antigona
     %article
       %h2 Procesos participativos
+      %strong
+        %p= getTexto("que_hacemos")
     %article
-
-      #myCarousel.carousel.slide
-        .carousel-inner
-          .active.item= image_tag("http://farm9.staticflickr.com/8535/8692781960_3bb6503696_z.jpg", id: "diapos", class: "img-rounded")
-          - @fotos.each do |foto|
-            .item
-              = image_tag(foto.img_link , class: "img-rounded", id: "diapos")
-
-          /.active.item= image_tag("http://farm9.staticflickr.com/8409/8701877376_acaf2d2bf3_z.jpg")
-          /.item= image_tag("iglesia.jpg", height: '32px', class: ".enbloque", id: "clinica" )
-          /.item= image_tag("villanueva.jpg", height: '32px', class: ".enbloque", id: "clinica" )
-        / Carousel nav
-        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
-        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
+      .container-fluid
         %p
-          = getTexto("que_hacemos")
-
-
-
+        - @fotos.each do |foto|
+          .span3
+            = image_tag(foto.img_link , class: "img-rounded", id: "fotoportada")
 

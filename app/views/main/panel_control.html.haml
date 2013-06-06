@@ -79,8 +79,8 @@
                 %li
                   %a
                     %strong= texto.name
-
-                  %p= texto.content
-                  %p= button_to 'Editar', edit_texto_path(texto), method: "get", class: "btn btn-primary"
+                  .contenido
+                    %p= texto.content
+                    %p= button_to 'Editar', edit_texto_path(texto), method: "get", class: "btn btn-primary"
 
 
