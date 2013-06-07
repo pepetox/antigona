@@ -21,12 +21,7 @@
       <%= cktext_area :post, :description, :ckeditor => {:uiColor => "#dddddd", :toolbar => "mini"} %>
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :integrante_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :integrante_id, :class => 'number_field' %>
-    </div>
-  </div>
+
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

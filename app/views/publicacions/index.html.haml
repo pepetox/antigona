@@ -11,7 +11,7 @@
     %tr
       %td= image_tag pub.img_link
       %td= link_to pub.name, publicacion_path(pub)
-      %td= pub.description
+      %td= = truncate(int.description.html_safe, length: 800)
       %td= button_to "Ver Documento", pub.doc_link, class: "btn btn-primary"
 
 

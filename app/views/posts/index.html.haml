@@ -1,0 +1,9 @@
+- model_class = Post
+.page-header
+  %h1 El blog de Antígona
+- @posts.each do |post|
+  %h2= link_to post.title, post_path(post)
+  - unless post.img_link == ""
+    = image_tag post.img_link, :size => "400x400", class: "img-rounded"
+  = post.description.html_safe
+  = l post.created_at

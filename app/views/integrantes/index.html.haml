@@ -8,9 +8,9 @@
     %tbody
     - @integrantes.each do |int|
       %tr
-        %td= image_tag int.img_link
+        %td= image_tag(int.img_link, class: "foto_persona")
         %td= link_to int.name, integrante_path(int)
-        %td= int.description
+        %td= truncate(int.description.html_safe, length: 800)
         %td= link_to "Curriculum vitae", int.cv_link
 
 

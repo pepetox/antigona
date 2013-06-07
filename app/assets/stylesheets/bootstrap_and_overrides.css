@@ -6,21 +6,22 @@
   =require twitter-bootstrap-static/fontawesome
   */
   boyd, p, a, h1, h2, ul, li {
-    font-family: 'Smythe', cursive !important;
-  }
-  strong {
-    font-size: 1.2em;
+    font-family: 'Caudex', serif; !important;
   }
 
   .contenido {
     display: none;
     padding: 1%;
   }
+  .barra{
+    padding: 0 1%;
+  }
+  .center{
+    padding: 2%;
+    font-size: 2em;
+  }
   .listado{
     display: none;
-  }
-  .barra {
-    padding: 2% 0;
   }
   .bloque_dir{
     border: 3px solid #ccc;
@@ -32,16 +33,17 @@
     padding-top: 4%;
   }
   .bloque_dir_prin{
-    border: 6px solid #ccc;
+    border: 6px solid #000000;
     width: 100%;
     text-align: center;
     margin: calc();
     overflow: none;
-
-
+  }
+  .foto_persona{
+    width: 200px;
+    height: auto;
   }
   .img-rounded{
-
     opacity: .9;
   }
   .img-rounded:hover {
@@ -54,38 +56,18 @@
     -moz-box-shadow: 4px 4px 5px #282b1f;
     box-shadow: 4px 4px 5px #282b1f;
     }
+  .logo{
+    margin: 0 auto;
+  }
 
   #apartado{
-      border: 1px solid #C3C3C3;
+      border: 1px solid #000000;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
       padding: 3% 1% 2% 5%;
-
-  }
-  #diapos{
-    height: 30%;
-    width: auto;
-    overflow: hidden;
-  }
-  #principal{
-    width: 60%;
-    margin: auto auto;
-    border: 1px solid #C3C3C3;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
   }
 
   #foto_derecha{
     float: right;
-  }
-  #foto_portada{
-    margin: 1%;
-    display: inline-block;
-    width: 100%;
-  }
-  #titulo {
-    text-align: center;
-    padding: 3% 0 5% 0;
   }
