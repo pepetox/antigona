@@ -46,6 +46,25 @@
     margin: calc();
     overflow: none;
   }
+  .pie{
+
+    float: none;
+    position: relative;
+    margin: 3% 1% 1% 33%;
+
+
+  }
+  .contenedor-pie {
+    width: 110%;
+    background: black;
+    position: relative;
+    bottom: 0 !important;
+    right: 20px;
+    height: auto;
+    color: white;
+    margin: 5% 0 0 0;
+
+  }
   .foto_persona{
     width: 200px;
     height: auto;
@@ -76,6 +95,18 @@
       border-radius: 10px;
       padding: 3% 1% 2% 5%;
   }
+
+
+  #lista-pie{
+    display: inline-block;
+    float: none;
+    position: relative;
+    padding: 1% 6%;
+    text-align: center;
+
+
+  }
+
 
   #foto_derecha{
     float: right;
