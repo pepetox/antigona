@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605100928) do
+ActiveRecord::Schema.define(:version => 20130609115225) do
 
   create_table "comentarios", :force => true do |t|
     t.string   "name"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20130605100928) do
     t.string   "doc_link"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "autor"
   end
 
   create_table "textos", :force => true do |t|

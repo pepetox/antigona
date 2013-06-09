@@ -5,8 +5,13 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
-  boyd, p, a, h1, h2, ul, li {
+  body, p, a, h1, h2, ul, li {
     font-family: 'Caudex', serif; !important;
+  }
+
+
+  .row-fluid [class*="span"]:first-child {
+      margin: 0 17.5%;
   }
 
   .contenido {
@@ -18,7 +23,9 @@
   }
   .center{
     padding: 2%;
-    font-size: 2em;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0 15% !important;
   }
   .listado{
     display: none;
@@ -57,7 +64,9 @@
     box-shadow: 4px 4px 5px #282b1f;
     }
   .logo{
-    margin: 0 auto;
+    margin: 0 39%;
+    display: inline-block;
+    padding: 0 auto;
   }
 
   #apartado{

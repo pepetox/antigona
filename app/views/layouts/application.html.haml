@@ -29,8 +29,8 @@
           = favicon_link_tag 'antifav.ico', :rel => 'shortcut icon'
   %body
     .logo
-      %a.logo{:href => root_url}
-      = image_tag("logo_antigona.jpg", width: "500px")
+      %a{:href => root_url}= image_tag("logo_antigona.jpg", width: "500px")
+
     = render 'layouts/header'
     .container-fluid
       .row-fluid#centrar
