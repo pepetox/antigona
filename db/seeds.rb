@@ -189,6 +189,8 @@ Integrante.create(name: "Concepción Lorenzana Álvarez", description: "Licencia
 
 Publicacion.create(name: "La democracia en acción. Una visión desde las metodologías participativas", description: "esta publicación habla de la demacracia en acción y de los procesos con metodologías participativas",
 img_link: "http://antigonaprocesosparticipativos.files.wordpress.com/2011/05/portada-libro.jpg?w=696", doc_link: "http://es.scribd.com/doc/138061454/La-Democracia-en-Accion");
+Publicacion.create(name: "Awastigni muihni sangnika yamni naini as dukih kalawa yaka", description: "Awastingni Mayangna Sulani Yalahwa Pâni, Was yal wainiku 2009 kurihni yak. “Awastingni ha soñado una visión para una larga vida”. En colaboración con el Pueblo Indígena Mayangna de la Comunidad de Awastingni (Nicaragua), mayo de 2009.",
+img_link: "http://antigonaprocesosparticipativos.files.wordpress.com/2013/05/portadacartilla-awas-tingni.jpg?w=217&h=300", doc_link: "http://es.scribd.com/doc/137965717/Awastingni-ha-sonado-una-vision-para-una-larga-vida#fullscreen");
 
 Texto.create(name: "intro", content: "Antígona nace de un grupo de personas que llevan más de diez años trabajando en el campo de la formación sobre metodologías participativas. Durante ese tiempo hemos llevado las técnicas participativas hacia otros terrenos profesionales. Así desde la formación, que aún hoy desarrollamos en diferentes ámbitos (universitarios y no universitarios), hemos ido avanzando en otros terrenos: investigaciones y diagnosticos participativos, consultorías sobre procesos participativos, asesoría, coordinación de seminarios y jornadas, etc. Los miembros de Antígona trabajamos en red y desde el sentido que nos da el empleo de metodologías participativas.
 nos conocimos en el entorno del Master UCM
@@ -219,9 +221,15 @@ Texto.create(name: "publicaciones", content: "Nuestra asociación ha publicado h
 
 Foto.create(name: "uno", img_link: "http://farm9.staticflickr.com/8439/8005634375_16e616b682_z.jpg");
 Foto.create(name: "dos", img_link: "http://farm9.staticflickr.com/8122/8692774842_4c04cf8247_z.jpg");
-Foto.create(name: "tres", img_link: "http://farm9.staticflickr.com/8439/8005634375_16e616b683_z.jpg");
+Foto.create(name: "tres", img_link: "http://farm9.staticflickr.com/8458/8005635802_03cf1fbfd1_z.jpg");
+Foto.create(name: "cuatro", img_link: "http://farm9.staticflickr.com/8038/8005636230_7ee407a6c3_z.jpg");
+Foto.create(name: "cinco", img_link: "http://farm9.staticflickr.com/8173/8005637495_43c6e59f9f_z.jpg");
+Foto.create(name: "seis", img_link: "http://farm9.staticflickr.com/8459/8005638469_5cbd807b96_z.jpg");
 
 
 
 Post.create(title: "post de testing",img_link: "http://farm9.staticflickr.com/8526/8633233655_29b47934ca_z.jpg", description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
+Post.create(title: "post de testing 2",img_link: "http://farm9.staticflickr.com/8526/8633233655_29b47934ca_z.jpg", description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
+Post.create(title: "post de testing 3",img_link: "http://farm9.staticflickr.com/8526/8633233655_29b47934ca_z.jpg", description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
+Post.create(title: "post de testing 4",img_link: "http://farm9.staticflickr.com/8526/8633233655_29b47934ca_z.jpg", description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.");
 

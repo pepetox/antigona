@@ -11,16 +11,15 @@
       %li
         %h5 ENTRADAS RECIENTES
         %HR/
-      %li= link_to "entrada mas reciente", "http://www.flickr.com/photos/antigonapparticipativos"
-      %li= link_to "entrada mas reciente", "https://vimeo.com/asociacionantigona/videos"
-      %li= link_to "entrada mas reciente", "http://es.scribd.com/"
+        - @ultimos_posts.each do |post|
+          %li= link_to post.title, post
     %ul#lista-pie
       %li
-        %h5 MANTENTE INFORMADO
+        %h5 CONTACTANOS
         %HR/
-      %li= link_to "formulario del correo", "http://www.flickr.com/photos/antigonapparticipativos"
-      %li= link_to "Enlace a Vimeo", "https://vimeo.com/asociacionantigona/videos"
-      %li= link_to "Enlace a Scribd", "http://es.scribd.com/"
+      %li= link_to "C/ Cea Bermúdez 14 3º - 3-28003 Madrid", main_contacto_path
 
+      %li= link_to "Tlf. / Fax: 91-5350319", main_contacto_path
+      %li= mail_to "asociacion@antigona.org.es"
 
   %p &copy; Pepetox 2013

@@ -8,6 +8,7 @@ private
       @integrantes = Integrante.all
       @publicaciones = Publicacion.all
       @fotos = Foto.all
+      @ultimos_posts = Post.most_recent
       @posts = Post.all
       @textos = Texto.all
   end

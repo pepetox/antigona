@@ -1,5 +1,5 @@
 %h1 Publicaciones
-%p
+%p#texto-principal
   = getTexto("publicaciones")
 
 %table.table.table-striped
@@ -9,9 +9,9 @@
   %tbody
   - @publicacions.each do |pub|
     %tr
-      %td= image_tag pub.img_link
+      %td= image_tag(pub.img_link, class: "foto_persona")
       %td= link_to pub.name, publicacion_path(pub)
-      %td= = truncate(int.description.html_safe, length: 800)
+      %td= truncate(pub.description.html_safe, length: 800)
       %td= button_to "Ver Documento", pub.doc_link, class: "btn btn-primary"
 
 

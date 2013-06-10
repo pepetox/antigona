@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130609115225) do
+ActiveRecord::Schema.define(:version => 20130610093747) do
 
   create_table "comentarios", :force => true do |t|
     t.string   "name"
@@ -45,8 +45,9 @@ ActiveRecord::Schema.define(:version => 20130609115225) do
     t.string   "img_link"
     t.text     "description"
     t.integer  "integrante_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.string   "autor",         :default => "Antígona"
   end
 
   create_table "publicacions", :force => true do |t|
@@ -56,7 +57,6 @@ ActiveRecord::Schema.define(:version => 20130609115225) do
     t.string   "doc_link"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "autor"
   end
 
   create_table "textos", :force => true do |t|

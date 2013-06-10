@@ -21,10 +21,9 @@
     padding: 0 1%;
   }
   .center{
-    padding: 2%;
+    padding: 3% 17%;
     font-size: 1.5em;
     width: 100%;
-    margin: 0 15% !important;
   }
   .listado{
     display: none;
@@ -49,7 +48,7 @@
 
     float: none;
     position: relative;
-    margin: 3% 1% 1% 20%;
+    margin: 3% 1% 1% 18%;
   }
   .contenedor-pie {
     width: 110%;
@@ -59,24 +58,22 @@
     right: 20px;
     height: auto;
     color: white;
-
   }
   .contenedor-pie a{
     color: white;
   }
-
   .foto_persona{
-    width: 200px;
+    width: 100px;
     height: auto;
   }
   .img-rounded{
     opacity: .9;
+    margin: 3%;
   }
-
   img#logo {
       border: 0 none;
-      height: auto;
-      max-width: 35%;
+      max-width: 100%;
+      width: 100% !important;
       vertical-align: middle;
   }
   .img-rounded:hover {
@@ -90,7 +87,7 @@
     box-shadow: 4px 4px 5px #282b1f;
     }
   .logo{
-    margin: 0 36%;
+    margin: 0 40%;
     display: inline-block;
     padding: 0 auto;
   }
@@ -100,12 +97,11 @@
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      padding: 3% 1% 2% 5%;
+      padding: 3% 1% 4% 5%;
   }
-
-
   #lista-pie{
     display: inline-block;
+    list-style: none;
     float: none;
     position: relative;
     padding: 1% 6%;
@@ -116,9 +112,16 @@
   }
   #fotos{
     margin: 5%;
-
   }
-
+  #foto-post{
+    margin: 3% 0 5% 0;
+  }
   #principal{
     margin: 2% 0% 5% 0;
+  }
+  #texto-principal{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 3% 1% 2% 5%;
   }

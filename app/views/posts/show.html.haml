@@ -1,7 +1,9 @@
 %h1
   = link_to @post.title, post_path(@post)
-  %p
-    - unless @post.img_link == ""
-      = image_tag @post.img_link, :size => "400x400", class: "img-rounded"
-    = @post.description.html_safe
-    = l @post.created_at
+%p
+  - unless @post.img_link == ""
+    = image_tag @post.img_link, :size => "400x400", class: "img-rounded", id: "foto-post"
+  %p= @post.description.html_safe
+  = l @post.created_at
+  Escrito por:
+  =@post.autor
