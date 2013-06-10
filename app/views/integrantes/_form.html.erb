@@ -7,7 +7,10 @@
   </div>
   <div class="control-group">
     <%= f.label :description, :class => 'control-label' %>
-    <%= cktext_area :integrante, :description, :ckeditor => {:uiColor => "#dddddd", :toolbar => "mini"} %>
+    <div class="controls">
+      <%= cktext_area :integrante, :description, :ckeditor => {:uiColor => "#dddddd", :toolbar => "mini"} %>
+    </div>
+  </div>
   <div class="control-group">
     <%= f.label :cv_link, :class => 'control-label' %>
     <div class="controls">
@@ -22,7 +25,6 @@
            <%= image_tag @integrante.img_link, :size => "100x100", class: "img-rounded", id: "foto_derecha" %>
       <% end %>
     </div>
-
   </div>
   <div class="control-group">
     <%= f.label :pos, :class => 'control-label' %>

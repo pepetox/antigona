@@ -9,8 +9,8 @@
     <%= f.label :img_link, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :img_link, :class => 'text_field' %>
-      <% unless @publicacion.img_link == "" %>
-        <%= image_tag @publicacion.img_link, :size => "200x200", class: "img-rounded", id: "foto_derecha" %>
+      <% unless @foto.img_link == "" %>
+        <%= image_tag @foto.img_link, :size => "200x200", class: "img-rounded", id: "foto_derecha" %>
       <% end %>
     </div>
   </div>
